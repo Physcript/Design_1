@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --background: #1f1f2a; 
+}
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* custom */
+
+.hidden {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+
+/* first-page */
+
+.first-page {
+  background: var(--background);
+  width: 100%;
+  height: 100vh;
+  color: #fff
+}
+
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%; 
+}
+
+nav a {
+  color: #fff;
+}
+
+.logo {
+
+}
+
+.menu {
+  align-self: center;
+}
+
+.menu ul {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-icon {
+  align-self: center;
+  display: none;
+}
+
+.main {
+  padding: 0 10%;
+  width: 100%;
+  position: relative;
+}
+.main .image-holder {
+  height: 520px;
+  width: 100%;
+}
+.main .image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.3;
+  position: relative;
+}
+.main .image-holder .hero-title {
+  position: absolute;
+  padding: 0 10%;
+  top: 20vh;
+  left: 20vh;
+  display: flex;
+  gap: 10px;
+}
+.main .image-holder .hero-title h1 {
+  background: #ffff80;
+  font-size: 60px;
+  padding: 30px 15px;
+  color: #000;
+}
+.main .image-holder .hero-title label {
+  font-size: 45px;
+  line-height: 2rem;
+  align-self: center;
+}
+.main .image-holder .footer-title {
+  height: 120px;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--background);
+  margin: 0 10%;
+  padding: 20px;
+}
+.main .image-holder .footer-title label {
+  color: #ffff80;
+  font-size: 18px;
+}
+.main .image-holder .footer-title .planning{
+  padding-left: 5px;
+  border-left: 1px solid white; 
+}
+.main .image-holder .footer-title .expertise {
+  padding-left: 5px;
+  border-left: 1px solid white;
+}
+
+@media (max-width: 43em) {
+  .menu {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  
+}
